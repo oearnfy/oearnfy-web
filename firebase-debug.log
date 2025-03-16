@@ -1,0 +1,63 @@
+[debug] [2025-03-16T12:58:09.697Z] ----------------------------------------------------------------------
+[debug] [2025-03-16T12:58:09.699Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:channel:deploy production
+[debug] [2025-03-16T12:58:09.700Z] CLI Version:   13.34.0
+[debug] [2025-03-16T12:58:09.700Z] Platform:      win32
+[debug] [2025-03-16T12:58:09.701Z] Node Version:  v23.9.0
+[debug] [2025-03-16T12:58:09.701Z] Time:          Sun Mar 16 2025 18:58:09 GMT+0600 (Bangladesh Standard Time)
+[debug] [2025-03-16T12:58:09.702Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-16T12:58:09.912Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-16T12:58:09.913Z] > authorizing via signed-in user (oearnfycompany@gmail.com)
+[debug] [2025-03-16T12:58:09.913Z] [iam] checking project oearnfy999 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-16T12:58:09.914Z] Checked if tokens are valid: false, expires at: 1742086618362
+[debug] [2025-03-16T12:58:09.914Z] Checked if tokens are valid: false, expires at: 1742086618362
+[debug] [2025-03-16T12:58:09.914Z] > refreshing access token with scopes: []
+[debug] [2025-03-16T12:58:09.915Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-16T12:58:09.915Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-16T12:58:09.967Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------224704098298960435885861","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo EAI_AGAIN www.googleapis.com
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-16T12:58:09.969Z] [iam] error while checking permissions, command may fail: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-16T12:58:09.970Z] Checked if tokens are valid: false, expires at: 1742086618362
+[debug] [2025-03-16T12:58:09.970Z] Checked if tokens are valid: false, expires at: 1742086618362
+[debug] [2025-03-16T12:58:09.970Z] > refreshing access token with scopes: []
+[debug] [2025-03-16T12:58:09.970Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-16T12:58:09.970Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-16T12:58:09.975Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------851301236450309197236867","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo EAI_AGAIN www.googleapis.com
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-16T12:58:09.976Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-16T12:58:10.341Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:147:12)
+    at refreshTokens (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:539:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getAccessToken (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:42:18)
+    at async Client.addAuthHeader (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:169:21)
+    at async Client.request (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:120:34)
+    at async getFirebaseProject (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:322:21)
+    at async getDefaultHostingSite (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:14:21)
+    at async Object.requireHostingSite [as fn] (C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:241:17
+[error] 
+[error] Error: Failed to get Firebase project oearnfy999. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-03-16T12:58:22.849Z] ----------------------------------------------------------------------
+[debug] [2025-03-16T12:58:22.851Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\golam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2025-03-16T12:58:22.851Z] CLI Version:   13.34.0
+[debug] [2025-03-16T12:58:22.851Z] Platform:      win32
+[debug] [2025-03-16T12:58:22.851Z] Node Version:  v23.9.0
+[debug] [2025-03-16T12:58:22.852Z] Time:          Sun Mar 16 2025 18:58:22 GMT+0600 (Bangladesh Standard Time)
+[debug] [2025-03-16T12:58:22.852Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1027544460&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=oearnfycompany%40gmail.com
+[info] 
+[info] Waiting for authentication...
